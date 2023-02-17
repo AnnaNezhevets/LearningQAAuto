@@ -8,7 +8,7 @@ public class TextBoxPage extends BasePage {
         super(driver);
     }
 
-    private final By buttonTextBox = By.xpath("(//span[text()='Text Box']");
+    private final By buttonTextBox = By.xpath("//span[text()='Text Box']");
 
     public TextBoxPage enterTexBox() {
         driver.findElement(buttonTextBox).click();

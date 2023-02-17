@@ -21,7 +21,7 @@ public class CommonActions {
                 driver = new FirefoxDriver();
                 break;
 
-            case "chrome":
+            case "CHROMEDRIVER":
                 System.setProperty("webdriver.chrome.driver", "C:/Program Files/Java/chromedriver.exe");
                 driver = new ChromeDriver();
                 break;

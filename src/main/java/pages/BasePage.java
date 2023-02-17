@@ -9,8 +9,7 @@ import static constants.Constains.TimeoutVeriables.EXPLICID_WAIT;
 
 
 public class BasePage {
-   WebDriver driver;
-    protected BasePage basePage = new BasePage(driver);
+    WebDriver driver;
 
     public BasePage(WebDriver driver) { this.driver = driver; }
 
