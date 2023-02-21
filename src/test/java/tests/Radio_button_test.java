@@ -5,11 +5,11 @@ import tests.base.BaseTest;
 
 import static constants.Constains.Urls.DEMOQA;
 
-public class Dynamic_properties_test extends BaseTest {
+public class Radio_button_test extends BaseTest {
 
     @Test
-    public void testOpenDynamicProperties(){
+    public void testOpenRadioButton(){
         basePage.goToUrl(DEMOQA);
-        dynamicPropertiesPage.enterDynamicProperties();
+        radioButtonPage.enterRadioButton();
     }
 }
