@@ -9,3 +9,9 @@ jobs:
   my_testing:
   
     runs-on: ubuntu-latest 
+    
+    steps:
+      
+    - name: Git clonу my repo
+      uses: actions/checkout@v1
+    
