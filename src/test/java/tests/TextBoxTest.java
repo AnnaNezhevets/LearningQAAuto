@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import tests.base.BaseTest;
 
+
 import static constants.Constains.Urls.DEMOQA;
 
 public class TextBoxTest extends BaseTest {
@@ -13,6 +14,8 @@ public class TextBoxTest extends BaseTest {
         basePage.goToUrl(DEMOQA);
         textBoxPage.enterTexBox()
                 .selectFullName().selectEmail().selectCurrentAAddress().selectPermanentAddress().enterSubmit();
+
+//        Assert.assertArrayEquals(expectedTestBoxPage, listTextBoxPage.toArray());
 
         Assertions.assertEquals("Name:Semen", textBoxPage.getFullNameTextBox());
     }

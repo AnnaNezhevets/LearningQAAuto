@@ -2,8 +2,6 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Actions;
-
 
 public class BrokenAndLinksImagesPage extends BasePage {
     public BrokenAndLinksImagesPage(WebDriver driver) {
@@ -12,7 +10,7 @@ public class BrokenAndLinksImagesPage extends BasePage {
 
     private final By buttonBrokenLinksImages = By.xpath("//span[text() = 'Broken Links - Images']");
 
-    public BrokenAndLinksImagesPage enterBrokenLinksImages() {
+        public BrokenAndLinksImagesPage enterBrokenLinksImages() {
 
         driver.findElement(buttonBrokenLinksImages).click();
         return this;

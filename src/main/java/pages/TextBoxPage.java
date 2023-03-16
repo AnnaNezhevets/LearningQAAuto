@@ -5,6 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class TextBoxPage extends BasePage {
     public TextBoxPage(WebDriver driver) {
         super(driver);
@@ -48,11 +52,24 @@ public class TextBoxPage extends BasePage {
         return this;
     }
 
+
     public String getFullNameTextBox(){
         new WebDriverWait(driver, 5)
                 .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div/p[@id = 'name']")));
         return driver.findElement(By.xpath("//div/p[@id = 'name']")).getText();
     }
 
+//    public TextBoxPage createListTextBoxPage() {
+//        List<String> expectedlistTextBoxPage = new ArrayList<>();
+//        expectedlistTextBoxPage.add("Semen");
+//        expectedlistTextBoxPage.add("test@gmail.com");
+//        expectedlistTextBoxPage.add("Berlin");
+//        expectedlistTextBoxPage.add("Berlin");
+//
+//        List <String> actualTestBoxPage = new ArrayList<>();
+//        actualTestBoxPage.add();
+//
+//        return this;
+//    }
 
 }

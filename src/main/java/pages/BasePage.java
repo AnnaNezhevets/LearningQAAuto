@@ -20,4 +20,6 @@ public class BasePage {
         new WebDriverWait(driver, EXPLICID_WAIT).until(ExpectedConditions.visibilityOf(element));
         return element;
     }
+
+
 }
