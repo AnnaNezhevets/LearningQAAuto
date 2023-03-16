@@ -12,6 +12,6 @@ jobs:
     
     steps:
       
-    - name: Git clonу my repo
+    - name: Git clone my repo
       uses: actions/checkout@v1
     
