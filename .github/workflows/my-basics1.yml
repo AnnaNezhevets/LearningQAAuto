@@ -7,13 +7,10 @@ on:
       
 jobs:
   my_testing:
-    name: deploy to staging
     runs-on: ubuntu-latest 
     
     steps:
       
     - name: Git clone my repo
       uses: actions/setup-node@v1
-      
-    - name: Install Dependencies
-      run: npm install
+
