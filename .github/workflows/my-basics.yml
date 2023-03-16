@@ -1,0 +1,11 @@
+name: My-GitHubActions-Basics
+
+on: 
+  push:
+    branches:
+      -master
+      
+jobs:
+  my_testing:
+  
+    runs-on: ubuntu-latest 
