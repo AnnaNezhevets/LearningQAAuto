@@ -33,8 +33,8 @@ public class BaseTest {
             javascriptExecutor.executeScript("window.sessionStorage.clear()");
         }
     }
-    @AfterAll
-    void close(){
-        driver.close();
-   }
+//    @AfterAll
+//    void close(){
+//        driver.close();
+//   }
 }
